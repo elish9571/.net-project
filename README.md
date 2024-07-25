@@ -1,13 +1,21 @@
-# bank_turns
-My Api design:
-The system maintains a log of queues for an ending bank.
-It includes an entity of type Clerk, Customer and Queue.
-For each request to schedule an appointment, the system checks the first available appointment
-If no request was sent for a certain time.
-If a request has been sent, it will look for the nearest available queue that corresponds to this time,
-And if not, return the nearest available queue.
-Once a turn is found,
-The system will mark for the time it was caught,
-The system will return the free clerk at this time,
-For the clerk, you will inform that he was caught at this time,
-and updates the appointment details for the customer.
+# Bank Turns
+## Introduction
+Bank Turns is an API for managing bank queues, featuring entities like Clerk, Customer, and Queue.<br>
+It schedules appointments by checking the first available or nearest available queue if no specific request is sent.<br>
+The project highlights efficient queue management in C#.
+
+## Code Structure
+Official.cs: Clerk entity and methods.<br>
+Customer.cs: Customer entity and methods.<br>
+Turn.cs: Queue entity and methods.<br>
+BankTurnsAPI.cs: Main API logic for queues and appointments.
+## Functionality
+Appointment Scheduling: Finds and books the nearest available appointment and updates details.
+Queue Management: Handles multiple queues efficiently and maintains logs.
+## Conclusion
+Bank Turns efficiently manages queue scheduling with sophisticated logic in C#.<br><br>
+
+
+Good luck!
+
+e.
